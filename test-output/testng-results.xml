@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2349" started-at="2018-04-15T18:15:42Z" finished-at="2018-04-15T18:15:45Z">
+  <suite name="Default suite" duration-ms="3045" started-at="2018-04-17T00:03:52Z" finished-at="2018-04-17T00:03:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2349" started-at="2018-04-15T18:15:42Z" finished-at="2018-04-15T18:15:45Z">
+    <test name="Default test" duration-ms="3045" started-at="2018-04-17T00:03:52Z" finished-at="2018-04-17T00:03:55Z">
       <class name="com.qa.restapi.PostRequestTest">
-        <test-method status="PASS" signature="postWeatherDetailsTest()[pri:0, instance:com.qa.restapi.PostRequestTest@6767c1fc]" name="postWeatherDetailsTest" duration-ms="2295" started-at="2018-04-15T18:15:42Z" finished-at="2018-04-15T18:15:45Z">
+        <test-method status="PASS" signature="postWeatherDetailsTest()[pri:0, instance:com.qa.restapi.PostRequestTest@6767c1fc]" name="postWeatherDetailsTest" duration-ms="2999" started-at="2018-04-17T00:03:52Z" finished-at="2018-04-17T00:03:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postWeatherDetailsTest -->

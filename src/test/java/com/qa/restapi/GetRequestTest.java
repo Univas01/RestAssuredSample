@@ -30,7 +30,7 @@ public class GetRequestTest {
 		String responseBody = response.getBody().asString();
 		System.out.println("********************RESPONSE BODY********************");
 		System.out.println("Response body is "+responseBody);
-
+				
 		//5. Get status code and validate it
 		int responseCode = response.getStatusCode();
 		System.out.println("********************STATUS CODE********************");

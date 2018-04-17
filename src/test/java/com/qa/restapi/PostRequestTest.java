@@ -20,6 +20,9 @@ public class PostRequestTest {
 
 		//b. Define http request
 		RequestSpecification httpRequest = RestAssured.given();
+		
+		//httpRequest.auth().basic("username", "ola");
+		
 
 		//Step 2: Create a JSON request which contains all the fields
 		JSONObject requestParameter = new JSONObject();
