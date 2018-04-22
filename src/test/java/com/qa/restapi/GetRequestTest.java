@@ -4,13 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestLogSpecification;
 import io.restassured.specification.RequestSpecification;
+
 
 public class GetRequestTest {
 
@@ -22,9 +23,13 @@ public class GetRequestTest {
 
 		//2. Define http request
 		RequestSpecification httpRequest = RestAssured.given();
-
+		httpRequest.log().body();
+		
+		
 		//3. Make a GET request
 		Response response = httpRequest.request(Method.GET, "/Pune");
+		//httpRequest.log().body();
+		
 		
 		//4. Get response body
 		String responseBody = response.getBody().asString();
@@ -41,6 +46,9 @@ public class GetRequestTest {
 		Headers hearders = response.getHeaders();
 		System.out.println("********************HEADERS********************");
 		System.out.println("Headers ==> "+ hearders);
+		
+		RequestLogSpecification req = httpRequest.log();
+		System.out.println("RequestLogSpecification "+req);
 
 		// Validate value within response body
 		Assert.assertEquals(responseBody.contains("Pune"), true);
@@ -51,11 +59,11 @@ public class GetRequestTest {
 
 		String city = jsonPath.get("City");
 		System.out.println("Value of city is:- "+city);
-		
+				
 		String Temperature = jsonPath.get("Temperature");
 		System.out.println("Value of Temperature is:- "+Temperature);
 		Assert.assertEquals(Temperature.contains("celsius"), true);
-		
+				
 
 	}
 
