@@ -26,7 +26,6 @@ public class PostRequestTest {
 		RequestSpecification httpRequest = RestAssured.given();
 		
 		//httpRequest.auth().basic("username", "ola");
-		
 
 		//Step 2: Create a JSON request which contains all the fields
 		JSONObject requestParameter = new JSONObject();
@@ -36,7 +35,7 @@ public class PostRequestTest {
 		requestParameter.put("UserName", "ohlarsimpleuser17");
 		requestParameter.put("Password", "application17");
 		requestParameter.put("Email",  "ohlarsimpleuser17@gmail.com");
-
+		
 		//Step 3: Add JSON body in the request and send the Request
 
 		//a. Add a header stating the Request body is a JSON
@@ -74,10 +73,17 @@ public class PostRequestTest {
 			AssertJUnit.assertEquals(response.jsonPath().get("Message"), "Operation completed successfully");
 		}
 		else if(statusCode != 201){
+<<<<<<< HEAD
 			AssertJUnit.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
 			AssertJUnit.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
 
+=======
+			Assert.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
+			Assert.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
+>>>>>>> e30aa629791c1e9816821a38473aa221e71a8b12
 		}
+		
+		
 
 		/*ResponseBody body = response.getBody();
 

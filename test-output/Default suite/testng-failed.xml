@@ -3,11 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.qa.restapi.GetRequestTest">
         <methods>
           <include name="getWeatherDetailsTest"/>
         </methods>
       </class> <!-- com.qa.restapi.GetRequestTest -->
+=======
+      <class name="com.qa.restapi.ToolsQAPostRequest">
+        <methods>
+          <include name="postRequest"/>
+        </methods>
+      </class> <!-- com.qa.restapi.ToolsQAPostRequest -->
+>>>>>>> e30aa629791c1e9816821a38473aa221e71a8b12
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

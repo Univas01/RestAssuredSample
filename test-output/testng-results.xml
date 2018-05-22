@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="3234" started-at="2018-05-16T14:40:51Z" finished-at="2018-05-16T14:40:54Z">
     <groups>
     </groups>
@@ -12,6 +13,18 @@
           </reporter-output>
         </test-method> <!-- getWeatherDetailsTest -->
       </class> <!-- com.qa.restapi.GetRequestTest -->
+=======
+  <suite name="Default suite" duration-ms="2580" started-at="2018-04-22T07:55:47Z" finished-at="2018-04-22T07:55:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2580" started-at="2018-04-22T07:55:47Z" finished-at="2018-04-22T07:55:50Z">
+      <class name="com.qa.restapi.ToolsQAPostRequest">
+        <test-method status="PASS" signature="postRequest()[pri:0, instance:com.qa.restapi.ToolsQAPostRequest@2b98378d]" name="postRequest" duration-ms="2548" started-at="2018-04-22T07:55:47Z" finished-at="2018-04-22T07:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequest -->
+      </class> <!-- com.qa.restapi.ToolsQAPostRequest -->
+>>>>>>> e30aa629791c1e9816821a38473aa221e71a8b12
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
