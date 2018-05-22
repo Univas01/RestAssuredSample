@@ -327,3 +327,57 @@
 2018-05-16 15:40:53,684 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
 2018-05-16 15:40:53,735 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3ecd267f
 2018-05-16 15:40:53,735 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-22 11:08:29,422 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-22 11:08:29,590 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-22 11:08:29,717 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-22 11:08:29,719 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-22 11:08:29,719 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-22 11:08:29,720 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-22 11:08:29,720 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-22 11:08:29,720 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-22 11:08:29,722 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-22 11:08:29,723 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-22 11:08:29,723 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-22 11:08:29,723 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-22 11:08:29,724 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-22 11:08:29,724 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-22 11:08:29,724 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-22 11:08:29,724 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-22 11:08:29,726 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-22 11:08:29,726 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-22 11:08:29,726 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-22 11:08:29,727 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-22 11:08:29,727 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-22 11:08:29,727 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-22 11:08:29,728 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-22 11:08:30,086 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-22 11:08:30,089 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-22 11:08:30,090 DEBUG [main] wire:73 -  << "Date: Tue, 22 May 2018 10:06:48 GMT[\r][\n]"
+2018-05-22 11:08:30,090 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-22 11:08:30,091 DEBUG [main] wire:73 -  << "Content-Length: 167[\r][\n]"
+2018-05-22 11:08:30,091 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-22 11:08:30,091 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-22 11:08:30,091 DEBUG [main] wire:73 -  << "Expires: Thu, 21 Jun 2018 10:06:48 GMT[\r][\n]"
+2018-05-22 11:08:30,092 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-22 11:08:30,092 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-22 11:08:30,092 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-22 11:08:30,092 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-22 11:08:30,093 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-22 11:08:30,094 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-22 11:08:30,094 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-22 11:08:30,094 DEBUG [main] headers:265 - << Date: Tue, 22 May 2018 10:06:48 GMT
+2018-05-22 11:08:30,094 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-22 11:08:30,095 DEBUG [main] headers:265 - << Content-Length: 167
+2018-05-22 11:08:30,095 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-22 11:08:30,096 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-22 11:08:30,096 DEBUG [main] headers:265 - << Expires: Thu, 21 Jun 2018 10:06:48 GMT
+2018-05-22 11:08:30,096 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-22 11:08:30,097 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-22 11:08:30,097 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-22 11:08:30,103 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-22 11:08:30,124 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-22 11:08:30,126 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e][0xcd][\n]"
+2018-05-22 11:08:30,126 DEBUG [main] wire:87 -  << "[0x82]@[0x14]F[0xf7]=[0xc5]e[0xd6]![0xe6][0xf]F[0xdb]\[0x4]m[0x84][0x82][0xd6]2~[0xe4]%[0x1d][0xe5][0xce][0xcc]B[0xa2]w[0xcf]A[0x8d][0xee][0xf2][0x9e][0xc3][0xc7]y[0xef]h>uf7[0xa9][0x13][0xa9][0xca][0x1b][0xa8][0xfd][0xf2][0xbb][0xa3][0x1f]![0xb5][0xf3][0x82][0x80][0xd2]<[0xca]2*[0xf1][0x14][0x80]4:[0xcb][0xde]n[0xea][0xc5][0xf7][0xdc][0xac][0x13]iJ[0x15]D[0xc3][0xb8][0x8d]>P[0xbb][0x16]R[0xc2]j[0xe1][0xd1][0xf1]`[0x82][0xa7];[0xd4]B[0xf6]5[0xfd]46[0xcd]m[0x4][0x9a]@[0xf3][0xa8]8[0xd0][0xb5][0xa7][0xb9][0x80][0xda][0xc1][0xcb][0xbf]T[0xb2]@[0x87][0x99]%&[0xe8][0xc9][0xb1][0x88][0xe2]8Y[0xf3][0xd4][0xee][0xf3][0x5][0x83]/[0x96][0xa5][0xd8][0x0][0x0][0x0]"
+2018-05-22 11:08:30,127 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-22 11:08:30,170 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3ecd267f
+2018-05-22 11:08:30,170 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
