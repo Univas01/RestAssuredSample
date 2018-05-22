@@ -73,14 +73,11 @@ public class PostRequestTest {
 			AssertJUnit.assertEquals(response.jsonPath().get("Message"), "Operation completed successfully");
 		}
 		else if(statusCode != 201){
-<<<<<<< HEAD
 			AssertJUnit.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
 			AssertJUnit.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
 
-=======
 			Assert.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
 			Assert.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
->>>>>>> e30aa629791c1e9816821a38473aa221e71a8b12
 		}
 		
 		
