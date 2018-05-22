@@ -1,0 +1,329 @@
+2018-05-11 14:45:16,730 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-11 14:45:16,748 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-11 14:45:16,884 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-11 14:45:16,888 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-11 14:45:16,889 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-11 14:45:16,890 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-11 14:45:16,891 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-11 14:45:16,892 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pue HTTP/1.1
+2018-05-11 14:45:16,893 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pue HTTP/1.1[\r][\n]"
+2018-05-11 14:45:16,895 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-11 14:45:16,895 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-11 14:45:16,896 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-11 14:45:16,897 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-11 14:45:16,897 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-11 14:45:16,898 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-11 14:45:16,898 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-11 14:45:16,900 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pue HTTP/1.1
+2018-05-11 14:45:16,901 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-11 14:45:16,902 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-11 14:45:16,902 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-11 14:45:16,902 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-11 14:45:16,903 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-11 14:45:16,904 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-11 14:45:17,290 DEBUG [main] wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2018-05-11 14:45:17,293 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-11 14:45:17,294 DEBUG [main] wire:73 -  << "Date: Fri, 11 May 2018 13:43:46 GMT[\r][\n]"
+2018-05-11 14:45:17,294 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-11 14:45:17,295 DEBUG [main] wire:73 -  << "Content-Length: 114[\r][\n]"
+2018-05-11 14:45:17,296 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-11 14:45:17,296 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-11 14:45:17,297 DEBUG [main] wire:73 -  << "Expires: Sun, 10 Jun 2018 13:43:46 GMT[\r][\n]"
+2018-05-11 14:45:17,297 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-11 14:45:17,298 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-11 14:45:17,299 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-11 14:45:17,299 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-11 14:45:17,301 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2018-05-11 14:45:17,302 DEBUG [main] headers:262 - << HTTP/1.1 400 Bad Request
+2018-05-11 14:45:17,302 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-11 14:45:17,303 DEBUG [main] headers:265 - << Date: Fri, 11 May 2018 13:43:46 GMT
+2018-05-11 14:45:17,303 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-11 14:45:17,304 DEBUG [main] headers:265 - << Content-Length: 114
+2018-05-11 14:45:17,304 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-11 14:45:17,305 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-11 14:45:17,306 DEBUG [main] headers:265 - << Expires: Sun, 10 Jun 2018 13:43:46 GMT
+2018-05-11 14:45:17,306 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-11 14:45:17,306 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-11 14:45:17,307 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-11 14:45:17,315 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-11 14:45:17,335 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-11 14:45:17,336 DEBUG [main] wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab][0xe6]R[0x0][0x2]%[0xb7][0xc4][0xd2][0x9c][0x12][0xcf][0x14]%+ [0xd3]1[0xd4]'$[0xde][0xd3]/[0xc4]5[0xc8][0xcf][0xd1]GI[0x7][0xa2] [\r][0xa4][0x0]$[0xed][0x98][0xa7][0x90][0x99]W[0x92]Z[0x94][0x97][0x98][0xa3][0x90]ZT[0x94]_[0xa4][0x90][0x9f][0x9c]\Z[0x94][0x9a][0xa2]P[0x9e][0x91][0x99][0x93][0xaa]P[0x9c]ZT[0x96][0x99][0x9c][0x99][0x97][0xae]P[0x92][0x91][0xaa]P[0x94]ZX[0x9a]Z\[0xa2][0xc4]U[0xb][0x0][0xa3][0x93][0xd9][0xb4]i[0x0][0x0][0x0]"
+2018-05-11 14:45:17,337 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-11 14:45:17,385 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58ffcbd7
+2018-05-11 14:45:17,385 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-11 14:59:11,118 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-11 14:59:11,283 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-11 14:59:11,410 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-11 14:59:11,413 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-11 14:59:11,414 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-11 14:59:11,415 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-11 14:59:11,415 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-11 14:59:11,416 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 14:59:11,417 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-11 14:59:11,418 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-11 14:59:11,419 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-11 14:59:11,420 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-11 14:59:11,421 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-11 14:59:11,422 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-11 14:59:11,423 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-11 14:59:11,423 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-11 14:59:11,425 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 14:59:11,426 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-11 14:59:11,427 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-11 14:59:11,427 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-11 14:59:11,427 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-11 14:59:11,428 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-11 14:59:11,429 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-11 14:59:11,772 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-11 14:59:11,776 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-11 14:59:11,776 DEBUG [main] wire:73 -  << "Date: Fri, 11 May 2018 13:57:41 GMT[\r][\n]"
+2018-05-11 14:59:11,777 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-11 14:59:11,777 DEBUG [main] wire:73 -  << "Content-Length: 169[\r][\n]"
+2018-05-11 14:59:11,778 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-11 14:59:11,778 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-11 14:59:11,779 DEBUG [main] wire:73 -  << "Expires: Sun, 10 Jun 2018 13:57:41 GMT[\r][\n]"
+2018-05-11 14:59:11,779 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-11 14:59:11,780 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-11 14:59:11,781 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-11 14:59:11,781 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-11 14:59:11,783 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-11 14:59:11,783 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-11 14:59:11,784 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-11 14:59:11,784 DEBUG [main] headers:265 - << Date: Fri, 11 May 2018 13:57:41 GMT
+2018-05-11 14:59:11,785 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-11 14:59:11,785 DEBUG [main] headers:265 - << Content-Length: 169
+2018-05-11 14:59:11,786 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-11 14:59:11,789 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-11 14:59:11,789 DEBUG [main] headers:265 - << Expires: Sun, 10 Jun 2018 13:57:41 GMT
+2018-05-11 14:59:11,790 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-11 14:59:11,791 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-11 14:59:11,792 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-11 14:59:11,800 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-11 14:59:11,829 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-11 14:59:11,831 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e]M[0xb][0xc2]0[0x10]D[0xef][0xfd][0x15]K[0xce]R[0xfa]aE[0xbc][0x9a][0x83][0xe0][0xa5][0xa0][0xd0]sIF[0x1b]h[0xd3][0xb2]M[0x10][0x11][0xff][0xbb][0x8d]m[0xc5]=[0xce]<f[0xdf]+[0xa2][0xe9][0xc4][0xd1][0xb8][0xa7]8[0x90]([0xbd][0x85][0xd8][0xcc][0xd9][0x15][0xdd][0x0][0xae][0x9d]g[0x84]*[0xdb][0xc7]E[0xb2]#[0x89];[0x3][0xa4][0xd0][0x8e][0xc6][0x8f]+{[0xf2][0x9d][0xd1][0xcb][0xc6]6[0xa7][0x12][0xac]`[0xdd][0xda]V[0xa8]][0x3][0x96][0x18][0x15][0x9b][0xc1][0x99][0xde][0x6][0xee][0x86][0x7][0xa9][0xb6][0xf7][0xfa][0xb7]R[0x19][0xab]/[0x3][0xa0][0xbf][0xff][0xe2]4[0xa3]sG[0x93][0x3]5[0xbd][0xe7]H[0x1a][0x86][\n]"
+2018-05-11 14:59:11,832 DEBUG [main] wire:87 -  << ";[0xb3]M[0xc0][0xf3][0xa4][0x98][0xfc][0xd2][0xc5]OD[0xef][0xf][0xb2][0x1b]2[0x99][0xda][0x0][0x0][0x0]"
+2018-05-11 14:59:11,834 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-11 14:59:11,893 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58ffcbd7
+2018-05-11 14:59:11,893 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-11 15:00:00,075 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-11 15:00:00,095 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-11 15:00:00,230 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-11 15:00:00,233 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-11 15:00:00,234 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-11 15:00:00,235 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-11 15:00:00,236 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-11 15:00:00,236 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 15:00:00,239 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-11 15:00:00,241 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-11 15:00:00,241 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-11 15:00:00,242 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-11 15:00:00,246 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-11 15:00:00,247 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-11 15:00:00,247 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-11 15:00:00,248 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-11 15:00:00,250 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 15:00:00,251 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-11 15:00:00,252 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-11 15:00:00,252 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-11 15:00:00,253 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-11 15:00:00,254 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-11 15:00:00,254 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-11 15:00:00,622 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-11 15:00:00,624 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-11 15:00:00,624 DEBUG [main] wire:73 -  << "Date: Fri, 11 May 2018 13:58:30 GMT[\r][\n]"
+2018-05-11 15:00:00,625 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-11 15:00:00,625 DEBUG [main] wire:73 -  << "Content-Length: 169[\r][\n]"
+2018-05-11 15:00:00,625 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-11 15:00:00,630 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-11 15:00:00,630 DEBUG [main] wire:73 -  << "Expires: Sun, 10 Jun 2018 13:58:29 GMT[\r][\n]"
+2018-05-11 15:00:00,631 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-11 15:00:00,631 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-11 15:00:00,632 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-11 15:00:00,632 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-11 15:00:00,633 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-11 15:00:00,633 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-11 15:00:00,634 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-11 15:00:00,634 DEBUG [main] headers:265 - << Date: Fri, 11 May 2018 13:58:30 GMT
+2018-05-11 15:00:00,635 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-11 15:00:00,635 DEBUG [main] headers:265 - << Content-Length: 169
+2018-05-11 15:00:00,635 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-11 15:00:00,636 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-11 15:00:00,637 DEBUG [main] headers:265 - << Expires: Sun, 10 Jun 2018 13:58:29 GMT
+2018-05-11 15:00:00,641 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-11 15:00:00,642 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-11 15:00:00,642 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-11 15:00:00,651 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-11 15:00:00,689 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-11 15:00:00,691 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e]M[0xb][0xc2]0[0x10]D[0xef][0xfd][0x15]K[0xce]R[0xfa]aE[0xbc][0x9a][0x83][0xe0][0xa5][0xa0][0xd0]sIF[0x1b]h[0xd3][0xb2]M[0x10][0x11][0xff][0xbb][0x8d]m[0xc5]=[0xce]<f[0xdf]+[0xa2][0xe9][0xc4][0xd1][0xb8][0xa7]8[0x90]([0xbd][0x85][0xd8][0xcc][0xd9][0x15][0xdd][0x0][0xae][0x9d]g[0x84]*[0xdb][0xc7]E[0xb2]#[0x89];[0x3][0xa4][0xd0][0x8e][0xc6][0x8f]+{[0xf2][0x9d][0xd1][0xcb][0xc6]6[0xa7][0x12][0xac]`[0xdd][0xda]V[0xa8]][0x3][0x96][0x18][0x15][0x9b][0xc1][0x99][0xde][0x6][0xee][0x86][0x7][0xa9][0xb6][0xf7][0xfa][0xb7]R[0x19][0xab]/[0x3][0xa0][0xbf][0xff][0xe2]4[0xa3]sG[0x93][0x3]5[0xbd][0xe7]H[0x1a][0x86][\n]"
+2018-05-11 15:00:00,692 DEBUG [main] wire:87 -  << ";[0xb3]M[0xc0][0xf3][0xa4][0x98][0xfc][0xd2][0xc5]OD[0xef][0xf][0xb2][0x1b]2[0x99][0xda][0x0][0x0][0x0]"
+2018-05-11 15:00:00,698 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-11 15:00:00,761 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2f4205be
+2018-05-11 15:00:00,762 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-11 15:02:07,782 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-11 15:02:07,808 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-11 15:02:07,949 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-11 15:02:07,952 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-11 15:02:07,953 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-11 15:02:07,955 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-11 15:02:07,956 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-11 15:02:07,956 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 15:02:07,958 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-11 15:02:07,959 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-11 15:02:07,960 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-11 15:02:07,961 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-11 15:02:07,961 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-11 15:02:07,962 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-11 15:02:07,963 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-11 15:02:07,964 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-11 15:02:07,965 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-11 15:02:07,966 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-11 15:02:07,967 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-11 15:02:07,967 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-11 15:02:07,968 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-11 15:02:07,968 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-11 15:02:07,969 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-11 15:02:09,165 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-11 15:02:09,167 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-11 15:02:09,168 DEBUG [main] wire:73 -  << "Date: Fri, 11 May 2018 14:00:38 GMT[\r][\n]"
+2018-05-11 15:02:09,168 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-11 15:02:09,168 DEBUG [main] wire:73 -  << "Content-Length: 169[\r][\n]"
+2018-05-11 15:02:09,169 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-11 15:02:09,170 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-11 15:02:09,170 DEBUG [main] wire:73 -  << "Expires: Sun, 10 Jun 2018 14:00:37 GMT[\r][\n]"
+2018-05-11 15:02:09,171 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-11 15:02:09,172 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-11 15:02:09,172 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-11 15:02:09,173 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-11 15:02:09,176 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-11 15:02:09,176 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-11 15:02:09,177 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-11 15:02:09,178 DEBUG [main] headers:265 - << Date: Fri, 11 May 2018 14:00:38 GMT
+2018-05-11 15:02:09,178 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-11 15:02:09,179 DEBUG [main] headers:265 - << Content-Length: 169
+2018-05-11 15:02:09,179 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-11 15:02:09,179 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-11 15:02:09,180 DEBUG [main] headers:265 - << Expires: Sun, 10 Jun 2018 14:00:37 GMT
+2018-05-11 15:02:09,181 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-11 15:02:09,183 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-11 15:02:09,183 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-11 15:02:09,192 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-11 15:02:09,224 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-11 15:02:09,227 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e]M[0xb][0xc2]0[0x10]D[0xef][0xfd][0x15]K[0xce]R[0xfa]aE[0xbc][0x9a][0x83][0xe0][0xa5][0xa0][0xd0]sIF[0x1b]h[0xd3][0xb2]M[0x10][0x11][0xff][0xbb][0x8d]m[0xc5]=[0xce]<f[0xdf]+[0xa2][0xe9][0xc4][0xd1][0xb8][0xa7]8[0x90]([0xbd][0x85][0xd8][0xcc][0xd9][0x15][0xdd][0x0][0xae][0x9d]g[0x84]*[0xdb][0xc7]E[0xb2]#[0x89];[0x3][0xa4][0xd0][0x8e][0xc6][0x8f]+{[0xf2][0x9d][0xd1][0xcb][0xc6]6[0xa7][0x12][0xac]`[0xdd][0xda]V[0xa8]][0x3][0x96][0x18][0x15][0x9b][0xc1][0x99][0xde][0x6][0xee][0x86][0x7][0xa9][0xb6][0xf7][0xfa][0xb7]R[0x19][0xab]/[0x3][0xa0][0xbf][0xff][0xe2]4[0xa3]sG[0x93][0x3]5[0xbd][0xe7]H[0x1a][0x86][\n]"
+2018-05-11 15:02:09,228 DEBUG [main] wire:87 -  << ";[0xb3]M[0xc0][0xf3][0xa4][0x98][0xfc][0xd2][0xc5]OD[0xef][0xf][0xb2][0x1b]2[0x99][0xda][0x0][0x0][0x0]"
+2018-05-11 15:02:09,233 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-11 15:02:09,309 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2f4205be
+2018-05-11 15:02:09,309 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-16 15:40:13,612 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-16 15:40:13,776 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-16 15:40:13,946 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-16 15:40:13,950 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-16 15:40:13,950 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-16 15:40:13,952 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-16 15:40:13,952 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-16 15:40:13,953 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-16 15:40:13,954 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-16 15:40:13,959 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-16 15:40:13,960 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-16 15:40:13,961 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-16 15:40:13,962 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-16 15:40:13,962 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-16 15:40:13,963 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-16 15:40:13,963 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-16 15:40:13,965 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-16 15:40:13,966 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-16 15:40:13,967 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-16 15:40:13,967 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-16 15:40:13,968 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-16 15:40:13,968 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-16 15:40:13,969 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-16 15:40:14,389 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-16 15:40:14,393 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-16 15:40:14,393 DEBUG [main] wire:73 -  << "Date: Wed, 16 May 2018 14:38:38 GMT[\r][\n]"
+2018-05-16 15:40:14,394 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-16 15:40:14,394 DEBUG [main] wire:73 -  << "Content-Length: 170[\r][\n]"
+2018-05-16 15:40:14,394 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-16 15:40:14,395 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-16 15:40:14,395 DEBUG [main] wire:73 -  << "Expires: Fri, 15 Jun 2018 14:38:38 GMT[\r][\n]"
+2018-05-16 15:40:14,395 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-16 15:40:14,395 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-16 15:40:14,396 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-16 15:40:14,396 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-16 15:40:14,397 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-16 15:40:14,397 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-16 15:40:14,398 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-16 15:40:14,398 DEBUG [main] headers:265 - << Date: Wed, 16 May 2018 14:38:38 GMT
+2018-05-16 15:40:14,398 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-16 15:40:14,399 DEBUG [main] headers:265 - << Content-Length: 170
+2018-05-16 15:40:14,399 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-16 15:40:14,399 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-16 15:40:14,400 DEBUG [main] headers:265 - << Expires: Fri, 15 Jun 2018 14:38:38 GMT
+2018-05-16 15:40:14,400 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-16 15:40:14,401 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-16 15:40:14,401 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-16 15:40:14,410 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-16 15:40:14,434 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-16 15:40:14,435 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e][0xcd][\n]"
+2018-05-16 15:40:14,435 DEBUG [main] wire:73 -  << "[0x82]@[0x14]F[0xf7]>[0xc5]e[0xd6]!f[0x92][0xd5]6[0x17]A[0x1b][0xa1][0xc0][0xb5][0xcd]|[0xe4][0xa0][0xce][0xc8]uf[0x11][0xd1][0xbb][0xe7]ot[0x97][0xf7];[0x1c][0xce];[0xa0][0xe1][0xc4]Y[0xbb][0x97]8[0x91][0xc8][0xbd][0x81][0xd8][0xcc][0xbf];[0xda][0xe]\:[0xcf][0x18][0xa7][0xf8][0x10][0xa6]iB[0x19][0x9e][0xc][0x90]D[0xd3]k[0xdf][0xaf][0xec][0xc5][0xb7]Z-[0x8e]dG9X[0xc2][0xb8]u-P[0xba][\n]"
+2018-05-16 15:40:14,436 DEBUG [main] wire:73 -  << "[0x9c][0xa1][0x97][0xac];[0xa7][0xad][0x19][0xb9][0x7][0xdb][0x1a][0x86]dc[0xbd][0xfa][0x89][\n]"
+2018-05-16 15:40:14,436 DEBUG [main] wire:73 -  << "m[0xd4][0xad][0x3][0xd4]d[\n]"
+2018-05-16 15:40:14,436 DEBUG [main] wire:87 -  << "[0xe3][0x94][0xae]-[\r][0x19]TY[0xcf][0xff]P[0xa6][0x19]rT[0xcd]AS[0xe1]q[0x1f]F[0xd1]vI[0x14][0xc1][0xe7][0xb][0xa5][0xa3][0xba][0xd7][0xdd][0x0][0x0][0x0]"
+2018-05-16 15:40:14,437 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-16 15:40:14,493 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2f4205be
+2018-05-16 15:40:14,494 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2018-05-16 15:40:53,104 DEBUG [main] BasicClientConnectionManager:161 - Get connection for route {}->http://restapi.demoqa.com:80
+2018-05-16 15:40:53,124 DEBUG [main] DefaultClientConnectionOperator:177 - Connecting to restapi.demoqa.com:80
+2018-05-16 15:40:53,270 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-05-16 15:40:53,273 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-05-16 15:40:53,273 DEBUG [main] RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-05-16 15:40:53,274 DEBUG [main] RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-05-16 15:40:53,275 DEBUG [main] DefaultHttpClient:682 - Attempt 1 to execute request
+2018-05-16 15:40:53,275 DEBUG [main] DefaultClientConnection:274 - Sending request: GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-16 15:40:53,277 DEBUG [main] wire:73 -  >> "GET /utilities/weather/city/Pune HTTP/1.1[\r][\n]"
+2018-05-16 15:40:53,280 DEBUG [main] wire:73 -  >> "Accept: */*[\r][\n]"
+2018-05-16 15:40:53,280 DEBUG [main] wire:73 -  >> "Content-Length: 0[\r][\n]"
+2018-05-16 15:40:53,283 DEBUG [main] wire:73 -  >> "Host: restapi.demoqa.com[\r][\n]"
+2018-05-16 15:40:53,284 DEBUG [main] wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-05-16 15:40:53,284 DEBUG [main] wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)[\r][\n]"
+2018-05-16 15:40:53,285 DEBUG [main] wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-05-16 15:40:53,285 DEBUG [main] wire:73 -  >> "[\r][\n]"
+2018-05-16 15:40:53,287 DEBUG [main] headers:278 - >> GET /utilities/weather/city/Pune HTTP/1.1
+2018-05-16 15:40:53,288 DEBUG [main] headers:281 - >> Accept: */*
+2018-05-16 15:40:53,288 DEBUG [main] headers:281 - >> Content-Length: 0
+2018-05-16 15:40:53,288 DEBUG [main] headers:281 - >> Host: restapi.demoqa.com
+2018-05-16 15:40:53,288 DEBUG [main] headers:281 - >> Connection: Keep-Alive
+2018-05-16 15:40:53,289 DEBUG [main] headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_162)
+2018-05-16 15:40:53,289 DEBUG [main] headers:281 - >> Accept-Encoding: gzip,deflate
+2018-05-16 15:40:53,645 DEBUG [main] wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2018-05-16 15:40:53,647 DEBUG [main] wire:73 -  << "Server: nginx/1.12.2[\r][\n]"
+2018-05-16 15:40:53,647 DEBUG [main] wire:73 -  << "Date: Wed, 16 May 2018 14:39:17 GMT[\r][\n]"
+2018-05-16 15:40:53,647 DEBUG [main] wire:73 -  << "Content-Type: application/json[\r][\n]"
+2018-05-16 15:40:53,648 DEBUG [main] wire:73 -  << "Content-Length: 170[\r][\n]"
+2018-05-16 15:40:53,648 DEBUG [main] wire:73 -  << "Connection: keep-alive[\r][\n]"
+2018-05-16 15:40:53,648 DEBUG [main] wire:73 -  << "Cache-Control: max-age=2592000[\r][\n]"
+2018-05-16 15:40:53,649 DEBUG [main] wire:73 -  << "Expires: Fri, 15 Jun 2018 14:39:17 GMT[\r][\n]"
+2018-05-16 15:40:53,649 DEBUG [main] wire:73 -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+2018-05-16 15:40:53,650 DEBUG [main] wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2018-05-16 15:40:53,650 DEBUG [main] wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-05-16 15:40:53,651 DEBUG [main] wire:73 -  << "[\r][\n]"
+2018-05-16 15:40:53,652 DEBUG [main] DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2018-05-16 15:40:53,652 DEBUG [main] headers:262 - << HTTP/1.1 200 OK
+2018-05-16 15:40:53,652 DEBUG [main] headers:265 - << Server: nginx/1.12.2
+2018-05-16 15:40:53,652 DEBUG [main] headers:265 - << Date: Wed, 16 May 2018 14:39:17 GMT
+2018-05-16 15:40:53,653 DEBUG [main] headers:265 - << Content-Type: application/json
+2018-05-16 15:40:53,653 DEBUG [main] headers:265 - << Content-Length: 170
+2018-05-16 15:40:53,653 DEBUG [main] headers:265 - << Connection: keep-alive
+2018-05-16 15:40:53,653 DEBUG [main] headers:265 - << Cache-Control: max-age=2592000
+2018-05-16 15:40:53,653 DEBUG [main] headers:265 - << Expires: Fri, 15 Jun 2018 14:39:17 GMT
+2018-05-16 15:40:53,654 DEBUG [main] headers:265 - << Vary: Accept-Encoding,User-Agent
+2018-05-16 15:40:53,654 DEBUG [main] headers:265 - << Content-Encoding: gzip
+2018-05-16 15:40:53,655 DEBUG [main] headers:265 - << Access-Control-Allow-Origin: *
+2018-05-16 15:40:53,659 DEBUG [main] DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2018-05-16 15:40:53,680 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json
+2018-05-16 15:40:53,681 DEBUG [main] wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0x8e][0xcd][\n]"
+2018-05-16 15:40:53,681 DEBUG [main] wire:73 -  << "[0x82]@[0x14]F[0xf7]>[0xc5]e[0xd6]!f[0x92][0xd5]6[0x17]A[0x1b][0xa1][0xc0][0xb5][0xcd]|[0xe4][0xa0][0xce][0xc8]uf[0x11][0xd1][0xbb][0xe7]ot[0x97][0xf7];[0x1c][0xce];[0xa0][0xe1][0xc4]Y[0xbb][0x97]8[0x91][0xc8][0xbd][0x81][0xd8][0xcc][0xbf];[0xda][0xe]\:[0xcf][0x18][0xa7][0xf8][0x10][0xa6]iB[0x19][0x9e][0xc][0x90]D[0xd3]k[0xdf][0xaf][0xec][0xc5][0xb7]Z-[0x8e]dG9X[0xc2][0xb8]u-P[0xba][\n]"
+2018-05-16 15:40:53,682 DEBUG [main] wire:73 -  << "[0x9c][0xa1][0x97][0xac];[0xa7][0xad][0x19][0xb9][0x7][0xdb][0x1a][0x86]dc[0xbd][0xfa][0x89][\n]"
+2018-05-16 15:40:53,682 DEBUG [main] wire:73 -  << "m[0xd4][0xad][0x3][0xd4]d[\n]"
+2018-05-16 15:40:53,683 DEBUG [main] wire:87 -  << "[0xe3][0x94][0xae]-[\r][0x19]TY[0xcf][0xff]P[0xa6][0x19]rT[0xcd]AS[0xe1]q[0x1f]F[0xd1]vI[0x14][0xc1][0xe7][0xb][0xa5][0xa3][0xba][0xd7][0xdd][0x0][0x0][0x0]"
+2018-05-16 15:40:53,684 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-05-16 15:40:53,735 DEBUG [main] BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3ecd267f
+2018-05-16 15:40:53,735 DEBUG [main] BasicClientConnectionManager:225 - Connection can be kept alive indefinitely

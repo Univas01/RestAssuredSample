@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.restapi.PostRequestTest">
+      <class name="com.qa.restapi.GetRequestTest">
         <methods>
-          <include name="postWeatherDetailsTest"/>
+          <include name="getWeatherDetailsTest"/>
         </methods>
-      </class> <!-- com.qa.restapi.PostRequestTest -->
+      </class> <!-- com.qa.restapi.GetRequestTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

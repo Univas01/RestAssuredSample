@@ -1,10 +1,8 @@
 package com.qa.restapi;
 
-import static org.testng.Assert.assertEquals;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+import org.testng.log4testng.Logger;
 import io.restassured.RestAssured;
 import io.restassured.http.Headers;
 import io.restassured.http.Method;
@@ -13,10 +11,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class GetRequestTest {
+	
+	Logger log = Logger.getLogger(GetRequestTest.class);
 
 	@Test
 	public void getWeatherDetailsTest(){
-
+		log.info("********************STARTING getWeatherDetailsTest TEST********************");
 		//1. Define baseURI
 		RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
 
@@ -27,26 +27,27 @@ public class GetRequestTest {
 		Response response = httpRequest.request(Method.GET, "/Pune");
 		
 		//4. Get response body
-		String responseBody = response.getBody().asString();
-		System.out.println("********************RESPONSE BODY********************");
-		System.out.println("Response body is "+responseBody);
+		String responseBody = response.getBody().prettyPrint();
+		log.info("********************RESPONSE BODY********************");
+		log.info("+++++++++++++++++++++++++++++++++");
+		log.info("Response body is "+responseBody);
 				
 		//5. Get status code and validate it
 		int responseCode = response.getStatusCode();
-		System.out.println("********************STATUS CODE********************");
-		System.out.println("Response code ==> "+ responseCode);
-		assertEquals(responseCode, 200);
-
+		log.info("********************STATUS CODE********************");
+		log.info("Response code ==> "+ responseCode);
+		Assert.assertEquals(responseCode, 200);
+		
 		//6. Get the headers
 		Headers hearders = response.getHeaders();
-		System.out.println("********************HEADERS********************");
-		System.out.println("Headers ==> "+ hearders);
+		log.info("********************HEADERS********************");
+		log.info("Headers ==> "+ hearders);
 
 		// Validate value within response body
 		Assert.assertEquals(responseBody.contains("Pune"), true);
 
 		// Extract a node text using JsonPath
-		System.out.println("**********GET VALUES USING JSONPATH**********");
+		log.info("**********GET VALUES USING JSONPATH**********");
 		JsonPath jsonPath = response.jsonPath();
 
 		String city = jsonPath.get("City");

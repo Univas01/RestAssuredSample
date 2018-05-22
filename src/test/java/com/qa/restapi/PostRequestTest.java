@@ -1,5 +1,9 @@
 package com.qa.restapi;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -62,16 +66,16 @@ public class PostRequestTest {
 		Assert.assertEquals(message, "Operation completed successfully");*/
 
 		System.out.println("===============================================");
-		System.out.println(response.getBody().asString());
+		System.out.println(response.getBody().prettyPrint());
 		System.out.println("===============================================");
 
 		if(statusCode == 201){
-			Assert.assertEquals(response.jsonPath().get("SuccessCode"), "OPERATION_SUCCESS");
-			Assert.assertEquals(response.jsonPath().get("Message"), "Operation completed successfully");
+			AssertJUnit.assertEquals(response.jsonPath().get("SuccessCode"), "OPERATION_SUCCESS");
+			AssertJUnit.assertEquals(response.jsonPath().get("Message"), "Operation completed successfully");
 		}
 		else if(statusCode != 201){
-			Assert.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
-			Assert.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
+			AssertJUnit.assertEquals(response.jsonPath().get("FaultId"),"User already exists");
+			AssertJUnit.assertEquals(response.jsonPath().get("fault"),"FAULT_USER_ALREADY_EXISTS");
 
 		}
 
